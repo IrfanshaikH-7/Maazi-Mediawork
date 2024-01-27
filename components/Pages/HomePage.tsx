@@ -479,7 +479,7 @@ const HomePage = () => {
          <div className="flex flex-col items-center justify-center px-12 py-12 gap-3 px- bg-teal-300 rounded-lg">
           <h2 className="text-4xl md:text-3xl lg:text-5xl text-center font-bold">Starting with Maazi media is easy, fast and free</h2>
           <h5 className="text-sm md:text-lg ">It only takes a few clicks to get started</h5>
-          <button className="px-6 py-3 text-white bg-pink-600 rounded-sm">Get started - it's free</button>
+          <button className="px-6 py-3 text-white bg-pink-600 rounded-sm">Get started - it&apos;s free</button>
           <p>Free for 14 days, no credit card required</p>
         </div> 
         </section>
