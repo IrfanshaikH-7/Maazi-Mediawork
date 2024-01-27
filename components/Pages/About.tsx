@@ -40,7 +40,7 @@ Nullam tempor pretium a gravida donec congue ipsum porta justo integer dolor odi
                     <Image 
                 src={abtimg4}
                 alt='a'
-                className='hidden md:block object-contain rounded-2xl'
+                className='hidden h-60 w-auto bg-black  md:block object-contain rounded-2xl'
                 />
                 </div>                   
                </div>
