@@ -31,7 +31,7 @@ const About = () => {
                     alt='abt-img2'
                         className='object-contain md:scale-125 md:translate-y-[5%] md:translate-x-[12.5%] rounded-2xl'
                     />
-                <div className='flex gap-8 md:mt-[16%]'>
+                <div className='flex gap-8 h-fit md:mt-[16%]'>
                     <div className='w-full md:min-w-64 rounded-2xl p-4 bg-slate-300'>
                      
 
