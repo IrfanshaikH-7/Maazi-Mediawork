@@ -50,7 +50,7 @@ const HomePage = () => {
               <button className="py-2.5 px-8  bg-pink-600 w-fit rounded-md text-white text-xl font-semibold ">
                 Get started for free
               </button>
-              <p className="mt-4 text-lg lg:text-xl text-white font-medium">
+              <p className="mt-4 text-sm text-center lg:text-xl text-white font-medium">
                 no credit card needed, Free 14 days Trial
               </p>
             </div>
@@ -74,11 +74,11 @@ const HomePage = () => {
       <div
         ref={featureRef}
         id="feature"
-        className="h-full w-full py-28 px-20 xl:px-28"
+        className="h-full w-full py-28 px-12 md:px-20 xl:px-28"
         >
         <div className="h-fit flex flex-col max-w-4xl gap-4 mx-auto p-2">
-          <p className="text-6xl text-neutral-700 font-bold  text-center">
-            Build a customer-centric marketing strategy
+          <p className="text-2xl md:text-6xl text-neutral-700 font-bold  text-center">
+            Build a customer centric marketing strategy
           </p>
           <p className="text-2xl text-neutral-500 font-semibold text-center">
             Ligula risus auctor tempus magna feugiat lacinia.
