@@ -29,7 +29,7 @@ const HomePage = () => {
   return (
     <>
       <main
-        className={`md:h-screen lg:h-[130vh] flex items-center w-full bg-[#1985A1] p-2 lg:p-4 overflow-hidden rounded-b-3xl mt-16 md:mt-0`}
+        className={`md:h-screen lg:h-[130vh] flex items-center w-full bg-[#1985A1] p-2 lg:p-4 overflow-x-hidden rounded-b-3xl mt-16 md:mt-0`}
         >
         <div className="h-full lg:h-5/6 flex flex-col md:flex-row justify-center items-center w-fit mx-auto mt-12 md:mt-0 overflow-hidden">
           <motion.div
