@@ -13,10 +13,16 @@ import { BarChart4, Code2, LayoutDashboard, ReceiptPoundSterling, ReceiptRussian
 import { DocumentReport, DocumentReportOutline, LightBulb } from 'heroicons-react';
 import { Input } from '../ui/input';
 import { Button } from '../ui/button';
+import AutoplayCarousel from '../core/AutoplayCarousel';
 
 const About = () => {
   return (
+    <>
+    
     <main className='h-full w-full  px-4 sm:px-16 md:px-8 lg:px-24 overflow-x-hidden'>
+      <div className='py-24 w-full h-full'>
+      <AutoplayCarousel />
+      </div>
         {/* First section */}
         <section className=''>
             <h2 className='md:max-w-3xl lg:max-w-5xl text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold mt-32'>We provide solutions for your creative ideas</h2>
@@ -338,6 +344,7 @@ Nullam tempor pretium a gravida donec congue ipsum porta justo integer dolor odi
         </div>
       </section>
     </main>
+    </>
   )
 }
 

@@ -21,6 +21,9 @@ import {
 import { fadeIn } from "@/lib/variants";
 import Image from "next/image";
 import NumberCounters from "../utility/NumberCounter";
+import TestCaro from "../core/TestimonialsCar";
+import AutoCaros from "../core/AutoplayCarousel";
+
 // import Carousel from "./Carousel";
 // import NumberCounters from "./NumberCounters";
 // import Footer from "./Footer";
@@ -29,7 +32,7 @@ const HomePage = () => {
   return (
     <>
       <main
-        className={`md:h-screen lg:h-[130vh] flex items-center w-full bg-[#1985A1] p-2 lg:p-4 overflow-x-hidden rounded-b-3xl mt-16 md:-mt-12`}
+        className={`md:h-screen lg:h-[130vh] flex items-center w-full bg-[#1985A1] p-2 lg:p-4 overflow-x-hidden rounded-b-3xl pt-16 md:-mt-12`}
         >
         <div className="h-full lg:h-5/6 flex flex-col md:flex-row justify-center items-center w-fit mx-auto mt-12 md:mt-0 overflow-hidden">
           <motion.div
@@ -131,7 +134,7 @@ const HomePage = () => {
 
       <section className="h-full w-full">
         {/* <----FIRST SECTION-----> */}
-        <div className="h-full w-full flex flex-col md:flex-row bg-blue-100 mx-auto py-12 px-4 sm:px-24 md:px-12 lg:px-20 xl:px-28">
+        <div id="why__maazi" className="h-full w-full flex flex-col md:flex-row bg-blue-100 mx-auto py-12 px-4 sm:px-24 md:px-12 lg:px-20 xl:px-28">
  
             <motion.div className="relative h-auto min-w-full p-8 sm:p-24 md:py-4 md:px-0 md:min-w-[450px] lg:min-w-[580px] max-w-[43%] w-full bg-contain "
           variants={fadeIn("right", 0.7)}
@@ -227,7 +230,8 @@ const HomePage = () => {
         </div>
 
         {/* <----THIRD SECTION-----> */}
-        <div className="h-full w-full mx-auto py-12 px-4 sm:px-24 md:px-12 lg:px-20 xl:px-28">
+        <div
+        className="h-full w-full mx-auto py-12 px-4 sm:px-24 md:px-12 lg:px-20 xl:px-28">
           <div className="max-w-4xl text-center mx-auto space-y-6">
             <h1 className="text-4xl md:text-6xl text-neutral-800 font-bold ">
               Reach your audience through social media marketing
@@ -282,7 +286,10 @@ const HomePage = () => {
         <NumberCounters from={0} to={100} />
 
         {/* <----FOURTH SECTION-----> */}
-        <div className="h-full w-full flex flex-col md:flex-row mx-auto py-12 px-4 sm:px-24 md:px-12 lg:px-20 xl:px-28">
+        <div
+        id="integration"
+        
+        className="h-full w-full flex flex-col md:flex-row mx-auto py-12 px-4 sm:px-24 md:px-12 lg:px-20 xl:px-28">
         <motion.div className="relative h-auto min-w-full p-8 sm:p-24 md:py-4 md:px-0 md:min-w-[450px] lg:min-w-[580px] max-w-[43%] w-full bg-contain "
           variants={fadeIn("right", 0.7)}
           initial="inactive"
@@ -362,46 +369,46 @@ const HomePage = () => {
               </li>
             </ul>
           </motion.div>
-          <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-2 gap-6 lg:gap-10 px-4  md:max-w-md lg:max-w-xl md:aspect-square  xl:max-w-2xl w-full justify-center items-center ">
-            <div className="h-full flex flex-col gap-2 p-6 md:items-center text-center lg:items-start justify-center aspect-video md:aspect-square border-2 rounded-xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-2 gap-4 lg:gap-10 px-4  md:max-w-md lg:max-w-xl md:aspect-square  xl:max-w-2xl w-full justify-center items-center ">
+            <div className="w-full md:h-full flex flex-col gap-2 p-6 md:items-center text-center lg:items-start justify-center aspect-video md:aspect-square border-2 rounded-xl">
               <LightBulbOutline className="h-12 w-auto  lg:h-10 xl:h-16 text-pink-600 aspect-square"/>
-              <h3 className="text-neutral-700 text-xl md:text-base xl:text-2xl font-bold">
+              <h3 className="text-neutral-700 text-lg md:text-base xl:text-2xl font-bold">
                 Content Marketing
               </h3>
-              <p className=" text-sm md:text-xs xl:text-lg text-neutral-600">
+              <p className=" text-xs md:text-xs xl:text-lg text-neutral-600">
                 Porta semper lacus and cursus feugiat at primis ultrice a ligula
                 auctor
               </p>
             </div>
 
-            <div className="h-full flex flex-col gap-2 p-6 md:items-center text-center lg:items-start justify-center aspect-video md:aspect-square border-2 rounded-xl">
+            <div className="w-full md:h-full flex flex-col gap-2 p-6 md:items-center text-center lg:items-start justify-center aspect-video md:aspect-square border-2 rounded-xl">
               <LightBulbOutline className="h-12 w-auto  lg:h-10 xl:h-16 text-pink-600 aspect-square"/>
-              <h3 className="text-neutral-700 text-xl md:text-base xl:text-2xl font-bold">
+              <h3 className="text-neutral-700 text-lg md:text-base xl:text-2xl font-bold">
                 Content Marketing
               </h3>
-              <p className="text-sm md:text-xs xl:text-lg text-neutral-600">
+              <p className=" text-xs md:text-xs xl:text-lg text-neutral-600">
                 Porta semper lacus and cursus feugiat at primis ultrice a ligula
                 auctor
               </p>
             </div>
 
-            <div className="h-full flex flex-col gap-2 p-6 md:items-center text-center lg:items-start justify-center aspect-video md:aspect-square border-2 rounded-xl">
+            <div className="w-full md:h-full flex flex-col gap-2 p-6 md:items-center text-center lg:items-start justify-center aspect-video md:aspect-square border-2 rounded-xl">
               <LightBulbOutline className="h-12 w-auto  lg:h-10 xl:h-16 text-pink-600 aspect-square"/>
-              <h3 className="text-neutral-700 text-xl md:text-base xl:text-2xl font-bold">
+              <h3 className="text-neutral-700 text-lg md:text-base xl:text-2xl font-bold">
                 Content Marketing
               </h3>
-              <p className=" text-sm md:text-xs xl:text-lg text-neutral-600">
+              <p className=" text-xs md:text-xs xl:text-lg text-neutral-600">
                 Porta semper lacus and cursus feugiat at primis ultrice a ligula
                 auctor
               </p>
             </div>
 
-            <div className="h-full flex flex-col gap-2 p-6 md:items-center text-center lg:items-start justify-center aspect-video md:aspect-square border-2 rounded-xl">
+            <div className="w-full md:h-full flex flex-col gap-2 p-6 md:items-center text-center lg:items-start justify-center aspect-video md:aspect-square border-2 rounded-xl">
               <LightBulbOutline className="h-12 w-auto  lg:h-10 xl:h-16 text-pink-600 aspect-square"/>
-              <h3 className="text-neutral-700 text-xl md:text-base xl:text-2xl font-bold">
+              <h3 className="text-neutral-700 text-lg md:text-base xl:text-2xl font-bold">
                 Content Marketing
               </h3>
-              <p className="text-sm md:text-xs xl:text-lg text-neutral-600">
+              <p className=" text-xs md:text-xs xl:text-lg text-neutral-600">
                 Porta semper lacus and cursus feugiat at primis ultrice a ligula
                 auctor
               </p>
@@ -449,7 +456,7 @@ const HomePage = () => {
         </div>
 
         {/* <----SEVENTH SECTION-----> */}
-        <div className="h-full w-full mx-auto py-16 px-4 sm:px-20 md:px-12 lg:px-20 xl:px-28 bg-neutral-200">
+        <div id="how_it_works" className="h-full w-full mx-auto py-16 px-4 sm:px-20 md:px-12 lg:px-20 xl:px-28 bg-neutral-200">
           <div className="max-w-3xl text-center mx-auto space-y-6">
             <h1 className=" text-4xl md:text-6xl text-neutral-800 font-bold ">
             Track the progress towards objectives with key results
@@ -472,7 +479,9 @@ const HomePage = () => {
             </div>
 
         {/* <----EIGHT SECTION-----> */}
-        {/* <Carousel /> */}
+        <div className="h-full w-full py-36 px-4 sm:px-24 md:px-12 lg:px-20 xl:px-28">
+        <AutoCaros />
+        </div>
         
         {/* NINTH SECTION */}
         <section className="py-12 md:px-28">
@@ -486,10 +495,10 @@ const HomePage = () => {
         
 
         {/*1<----TENTH SECTION-----> */}
-        <section className="h-full w-full bg-slate-200 flex flex-col justify-center py-12 px-4 sm:px-24 md:px-12 lg:px-20 xl:px-28">
+        <div id="best_solutions"  className="h-full w-full bg-slate-200 flex flex-col justify-center py-12 px-4 sm:px-24 md:px-12 lg:px-20 xl:px-28">
             <h2 className="text-4xl md:text-3xl lg:text-5xl text-center font-bold">The Complete Solutions</h2>
             <h5 className="text-sm md:text-lg mx-auto ">Ligula risus auctor tempus magna feugiat lacinia</h5>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-4 lg:gap-12 xl:gap-16 p-16 md:p-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-4 lg:gap-12 xl:gap-16 px-4 py-14 md:p-8">
             <div className="relative h-full w-full flex flex-col items-center gap-4 aspect-square  p-8 sm:p-12 md:p-2 lg:p-8 rounded-xl bg-black/10">
                     <Image 
                     src={img8}
@@ -518,7 +527,12 @@ const HomePage = () => {
                     <p className="text-xs lg:text-sm xl:text-base text-center">Egestas luctus augue undo ultrice aliquam in lacus feugiat cursus</p>
                 </div>
             </div>
-        </section>        
+        </div>   
+
+
+        <div className="h-full w-full py-36 px-4  md:px-12 lg:px-20 xl:px-28">
+        <TestCaro />
+        </div>     
       </section>
       {/* <Footer /> */}
     </>
