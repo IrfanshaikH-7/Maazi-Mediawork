@@ -136,7 +136,7 @@ const HomePage = () => {
 
       <section className="h-full w-full">
         {/* <----FIRST SECTION-----> */}
-        <div id="why__maazi" className="h-full w-full flex flex-col md:flex-row bg-blue-100 mx-auto py-12 px-4 sm:px-24 md:px-12 lg:px-20 xl:px-28">
+        <div id="why__maazi" className="h-full w-full flex flex-col md:flex-row mx-auto py-12 px-4 sm:px-24 md:px-12 lg:px-20 xl:px-28">
  
             <motion.div className="relative h-auto min-w-full p-8 sm:p-24 md:py-4 md:px-0 md:min-w-[450px] lg:min-w-[580px] max-w-[43%] w-full bg-contain "
           variants={fadeIn("right", 0.7)}
@@ -502,7 +502,7 @@ const HomePage = () => {
         
 
         {/*1<----ELEVEN SECTION-----> */}
-        <div id="best_solutions"  className="h-full w-full bg-slate-200 flex flex-col justify-center py-12 px-4 sm:px-24 md:px-12 lg:px-20 xl:px-28">
+        <div id="best_solutions"  className="h-full w-full  flex flex-col justify-center py-12 px-4 sm:px-24 md:px-12 lg:px-20 xl:px-28">
             <h2 className="text-4xl md:text-3xl lg:text-5xl text-center font-bold">The Complete Solutions</h2>
             <h5 className="text-sm md:text-lg mx-auto ">Ligula risus auctor tempus magna feugiat lacinia</h5>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-4 lg:gap-12 xl:gap-16 px-4 py-14 md:p-8">

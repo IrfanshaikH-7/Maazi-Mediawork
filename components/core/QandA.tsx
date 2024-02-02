@@ -46,7 +46,7 @@ const QandA = () => {
         <Accordion type="single" collapsible>
                 {
                     QnA.map((qna, idx) => (
-                        <AccordionItem value={`item-${idx}`} className=''>
+                        <AccordionItem key={`item-${idx}`} value={`item-${idx}`} className=''>
                   <AccordionTrigger className='test-base font-semibold px-2 md:text-2xl rounded-md hover:no-underline text-neutral-700 truncate ...'>
                     {qna.question}
                   </AccordionTrigger>
