@@ -1,3 +1,4 @@
+import { Facebook, Instagram, Twitter } from "lucide-react"
 import Link from "next/link"
 
 
@@ -88,11 +89,16 @@ const Footer = () => {
         <div className='flex flex-col gap-2 py-2 ml-3 md:ml-0 px-4'>
             <h2 className='mb-2 text-2xl font-semibold text-neutral-800'>Follow the best</h2>
             <Link href={'/'}
-            className='text-lg p-3 px-5 text-neutral-500 '
+            className='text-lg py-2 px-16 text-neutral-500 border rounded-md '
             >
                 Email address &#45;
             </Link>
-            
+            <div className="flex gap-4">
+                <Facebook className="h-6 w-6 text-neutral-500" />
+                <Twitter className="h-6 w-6 text-neutral-500" />
+                <Instagram className="h-6 w-6 text-neutral-500" />
+
+            </div>
         </div>
     </div>
     

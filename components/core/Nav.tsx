@@ -31,58 +31,42 @@ import { Box, Menu, ZapIcon } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { Button } from '../ui/button'
  
-const components: { title: string; href: string; description: string }[] = [
+const components: { title: string; href: string; }[] = [
   {
     title: "Core Features",
-    href: "#why__maazi",
-    description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
+    href: "#core_feature",
   },
   {
     title: "Blog list",
-    href: "/docs/primitives/hover-card",
-    description:
-      "For sighted users to preview content available behind a link.",
+    href: "#blog_list",
   },
   {
     title: "Our projects",
-    href: "/docs/primitives/progress",
-    description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+    href: "#our_project",
   },
   {
     title: "Pricing",
-    href: "/docs/primitives/scroll-area",
-    description: "Visually or semantically separates content.",
+    href: "/pricing",
   },
   {
     title: "Project details",
-    href: "/docs/primitives/tabs",
-    description:
-      "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
+    href: "#project_details",
   },
   {
     title: "FAQs",
-    href: "/docs/primitives/tooltip",
-    description:
-      "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+    href: "#faqs",
   },
   {
     title: "Testimonials",
-    href: "/docs/primitives/scroll-area",
-    description: "Visually or semantically separates content.",
+    href: "/testimonials",
   },
   {
     title: "Help-center",
-    href: "/docs/primitives/tabs",
-    description:
-      "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
+    href: "#Help-center",
   },
   {
     title: "Log in",
-    href: "/docs/primitives/tooltip",
-    description:
-      "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+    href: "#log-in",
   },
 ]
 const Nav = () => {
@@ -154,7 +138,7 @@ const Nav = () => {
             <section className=" w-full gap-1 p-4 hidden md:grid md:w-[260px]  grid-cols-2 lg:grid-cols-3 lg:w-[460px] ">
               {components.map((component) => (
                 <div key={component.title} className='flex items-start text-sm text-neutral-600 justify-center hover:bg-slate-200 rounded-md px-2 py-1'>
-                  <p className='text-start w-full '>{component.title}</p>
+                  <Link href={component.href} className='text-start w-full '>{component.title}</Link>
                 </div>
               ))}
             </section>
@@ -209,7 +193,7 @@ const Nav = () => {
                   <AccordionTrigger className='test-base font-semibold px-2 hover:bg-slate-100 rounded-md'>About</AccordionTrigger>
                   <AccordionContent className='flex flex-col gap-3'>
                   <SheetClose asChild >
-                    <Link href={'#feature'} className='text-base font-semibold hover:bg-slate-100 px-2 py-1.5 rounded-md'>
+                    <Link href={'#why_us'} className='text-base font-semibold hover:bg-slate-100 px-2 py-1.5 rounded-md'>
                       Why us
                     </Link>
                   </SheetClose>
@@ -220,17 +204,17 @@ const Nav = () => {
                   </SheetClose>
                     
                   <SheetClose asChild >
-                    <Link href={'#feature'} className='text-base font-semibold hover:bg-slate-100 px-2 py-1.5 rounded-md'>
+                    <Link href={'#how_it_works'} className='text-base font-semibold hover:bg-slate-100 px-2 py-1.5 rounded-md'>
                     How it works
                     </Link>
                   </SheetClose>
                   <SheetClose asChild >
-                    <Link href={'#feature'} className='text-base font-semibold hover:bg-slate-100 px-2 py-1.5 rounded-md'>
+                    <Link href={'#best_solutions'} className='text-base font-semibold hover:bg-slate-100 px-2 py-1.5 rounded-md'>
                     Best Solutions
                     </Link>
                   </SheetClose>
                   <SheetClose asChild >
-                    <Link href={'#feature'} className='text-base font-semibold hover:bg-slate-100 px-2 py-1.5 rounded-md'>
+                    <Link href={'#testimonials'} className='text-base font-semibold hover:bg-slate-100 px-2 py-1.5 rounded-md'>
                     Testimonials
                     </Link>
                   </SheetClose>

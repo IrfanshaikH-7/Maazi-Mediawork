@@ -458,8 +458,8 @@ const HomePage = () => {
         </div>
 
         {/* <----SEVENTH SECTION-----> */}
-        <div id="how_it_works" className="h-full w-full mx-auto py-16 px-4 sm:px-20 md:px-12 lg:px-20 xl:px-28 bg-neutral-200">
-          <div className="max-w-3xl text-center mx-auto space-y-6">
+        <div id="how_it_works" className="h-full w-full mx-auto py-24 px-4 sm:px-20 md:px-12 lg:px-20 xl:px-28 bg-neutral-200">
+          <div className=" max-w-3xl lg:max-w-5xl text-center mx-auto space-y-6">
             <h1 className=" text-4xl md:text-6xl text-neutral-800 font-bold ">
             Track the progress towards objectives with key results
             </h1>
@@ -467,7 +467,7 @@ const HomePage = () => {
               Ligula risus auctor tempus magna feugiat.
             </p>
           </div>
-          <motion.div className="relative px-6 h-fit w-full  bg-contain mt-10 lg:mt-16 -mb-24"
+          <motion.div className="relative px-6 h-fit w-full  bg-contain mt-10 lg:mt-16 -mb-44"
           variants={fadeIn("right", 0.7)}
           initial="inactive"
           whileInView={"active"}
@@ -481,27 +481,12 @@ const HomePage = () => {
             </div>
 
         {/* <----EIGHT SECTION-----> */}
-        <div className="h-full w-full py-36 px-4 sm:px-24 md:px-12 lg:px-20 xl:px-28">
+        <div className="h-full w-full pt-36 px-4 sm:px-24 md:px-12 lg:px-20 xl:px-28">
         <AutoCaros />
         </div>
-        {/* NINTH SECTION */}
-        <div className="py-12 md:px-28">
-
-          <QandA />
-        </div>
-        
-        {/* TENTH SECTION */}
-        <section className="py-12 md:px-28">
-         <div className="flex flex-col items-center justify-center px-12 py-12 gap-3 px- bg-teal-50 rounded-lg">
-          <h2 className="text-4xl md:text-3xl lg:text-5xl text-center font-bold text-neutral-700 xl:px-28">Starting with Maazi media is easy, fast and free</h2>
-          <h5 className="text-sm md:text-lg ">It only takes a few clicks to get started</h5>
-          <button className="px-6 py-3 text-white bg-pink-600 rounded-sm">Get started - it&apos;s free</button>
-          <p>Free for 14 days, no credit card required</p>
-        </div>
-        </section>
         
 
-        {/*1<----ELEVEN SECTION-----> */}
+        {/*1<----NINTH SECTION-----> */}
         <div id="best_solutions"  className="h-full w-full  flex flex-col justify-center py-12 px-4 sm:px-24 md:px-12 lg:px-20 xl:px-28">
             <h2 className="text-4xl md:text-3xl lg:text-5xl text-center font-bold">The Complete Solutions</h2>
             <h5 className="text-sm md:text-lg mx-auto ">Ligula risus auctor tempus magna feugiat lacinia</h5>
@@ -534,9 +519,29 @@ const HomePage = () => {
                     <p className="text-xs lg:text-sm xl:text-base text-center">Egestas luctus augue undo ultrice aliquam in lacus feugiat cursus</p>
                 </div>
             </div>
-        </div>   
+        </div>  
 
+        
 
+        {/* TENTH SECTION */}
+        <div className="py-12 md:px-28">
+          <QandA />
+        </div>
+
+        {/* ELEVENTH SECTION */}
+        <section className="py-12 md:px-28">
+         <div className="flex flex-col items-center justify-center px-12 py-32 gap-3 px- bg-teal-50 rounded-lg shadow-md">
+          <h2 className="text-4xl md:text-3xl lg:text-5xl text-center font-bold text-neutral-500 xl:px-28">Starting with Maazi media is easy, fast and free</h2>
+          <h5 className="text-sm md:text-lg ">It only takes a few clicks to get started</h5>
+          <button className="px-6 py-3 text-white bg-pink-600 rounded-sm">Get started - it&apos;s free</button>
+          <p>Free for 14 days, no credit card required</p>
+        </div>
+        </section>
+        
+
+         
+
+        {/*1<----TWELVE SECTION-----> */}
         <div className="h-full w-full py-36 px-4  md:px-12 lg:px-20 xl:px-28">
         <TestCaro />
         </div>     
