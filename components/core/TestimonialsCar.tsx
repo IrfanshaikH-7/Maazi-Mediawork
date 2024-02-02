@@ -11,15 +11,14 @@ import { User } from "lucide-react";
 class TestCaro extends Component{
   render(){
     const settings = {
-        className: "center",
-        centerMode: true,
-        centerPadding: "60px",
+      className: "center",
+      centerMode: true,
+      centerPadding: "60px",
       infinite: true,
       slidesToShow: 3,
       slidesToScroll: 1,
       autoplay: true,
       speed: 6000,
-      pauseOnHover: true,
       autoplaySpeed: 6000,
       cssEase: "linear",
       responsive: [

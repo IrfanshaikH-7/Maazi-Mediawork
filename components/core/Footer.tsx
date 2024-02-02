@@ -3,7 +3,10 @@ import Link from "next/link"
 
 const Footer = () => {
   return (
-    <div className='h-full w-full max-w-7xl px-4 py-24 mx-auto flex flex-col xl:flex-row justify-between '>
+<>
+<main className="h-full  max-w-7xl px-4 pt-24 mx-auto">
+
+    <div className='h-full w-full  flex flex-col xl:flex-row justify-between '>
     <h3 className='text-3xl font-bold w-fit p-2 '>Maazi mediaworks</h3>
     <div className='flex flex-col md:flex-row h-auto w-full justify-between '>
         <section className='flex flex-wrap h-auto w-full px-4 md:px-0 md:w-fit justify-between xl:w-fit gap-8 md:gap-24 xl:gap-20 '>
@@ -92,7 +95,14 @@ const Footer = () => {
             
         </div>
     </div>
+    
     </div>
+    <div className="h-16 w-full border-t-2 py-4">
+    <h5 className="text-neutral-400 font-xl font-semibold">&#x40; 2024 All Rights Reserved </h5>
+</div>
+</main>
+
+    </>
   )
 }
 

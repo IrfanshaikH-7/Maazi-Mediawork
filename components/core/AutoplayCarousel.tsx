@@ -53,7 +53,8 @@ class AutoCaros extends Component{
       ]
     };
     return(
-      <div className="mainContainer">
+      <div className="mainContainer py-16">
+        <p className="w-fit mx-auto font-semibold text-neutral-700 text-xl mb-12"> Trusted and used by over 3400 companies</p>
         <Slider {...settings}>
           <Image
           src={mazilogo}

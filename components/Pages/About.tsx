@@ -7,6 +7,7 @@ import abtimg3 from "@/public/assets/abt-img-3.jpg";
 import abtimg4 from "@/public/assets/abt-img-4.jpg";
 import abtimg5 from "@/public/assets/abt-img-5.jpg";
 import abtimg6 from "@/public/assets/abt-img-6.jpg";
+import abtimg7 from "@/public/assets/abt-img-7.jpg";
 import { motion } from 'framer-motion'
 import { fadeIn } from '@/lib/variants';
 import { BarChart4, Code2, LayoutDashboard, ReceiptPoundSterling, ReceiptRussianRuble, Trophy, User } from 'lucide-react';
@@ -20,9 +21,7 @@ const About = () => {
     <>
     
     <main className='h-full w-full  px-4 sm:px-16 md:px-8 lg:px-24 overflow-x-hidden'>
-      <div className='py-24 w-full h-full'>
-      <AutoplayCarousel />
-      </div>
+      
         {/* First section */}
         <section className=''>
             <h2 className='md:max-w-3xl lg:max-w-5xl text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold mt-32'>We provide solutions for your creative ideas</h2>
@@ -181,8 +180,13 @@ Nullam tempor pretium a gravida donec congue ipsum porta justo integer dolor odi
             </div>
          </div>
          </section>
-
          {/* Fifth section */}
+
+         <div className='py-24 w-full h-full'>
+      <AutoplayCarousel />
+      </div>
+
+         {/* sixth section */}
          <section className='flex flex-col lg:flex-row justify-between gap-16 items-center py-24 px-6'>
             <h1 className='text-4xl text-center font-semibold md:text-3xl xl:text-4xl md:text-start text-neutral-600'>Stay up to date with our news, ideas and updates</h1>
             <div className='flex flex-col sm:flex-row gap-4 w-full max-w-2xl '>
@@ -193,7 +197,7 @@ Nullam tempor pretium a gravida donec congue ipsum porta justo integer dolor odi
             </div>
          </section>
 
-         {/* Sixth section */}
+         {/* Seventh section */}
          <div className="h-full w-full flex flex-col md:flex-row gap-4 justify-between bg-neutral-300 rounded-3xl py-20 px-12">
           
         <motion.div className="relative md:hidden block min-w-ful max-w-full rounded-2xl bg-contain"
@@ -289,7 +293,143 @@ Nullam tempor pretium a gravida donec congue ipsum porta justo integer dolor odi
           </motion.div> */}
       </div>
       
+      
+
       {/* Ninth Section */}
+      <div className='py-16'>
+        
+        <div className='max-w-4xl w-fit mx-auto py-10 space-y-3'>
+               <h1 className='text-5xl font-semibold text-center'>All we do is dream and craft amazing products</h1>
+            <p className='text-xl text-neutral-600 text-center'>Ligula risus aucor tempus magna feugiat lacinia</p>
+        </div>
+        <section className='grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-4 gap-8 p-6'>
+          <div className='relative flex flex-col gap-4'>
+            <Image 
+            src={abtimg7}
+            alt='img'
+            className='object-contain rounded-2xl'
+            />
+            <div className='flex flex-col'>
+              <h4 className='text-2xl font-semibold text-neutral-800'>name</h4>
+              <p className='text-lg text-neutral-600'>occupation</p>
+            </div>
+          </div>
+
+          <div className='relative flex flex-col gap-4'>
+            <Image 
+            src={abtimg7}
+            alt='img'
+            className='object-contain rounded-2xl'
+            />
+            <div className='flex flex-col'>
+              <h4 className='text-2xl font-semibold text-neutral-800'>name</h4>
+              <p className='text-lg text-neutral-600'>occupation</p>
+            </div>
+          </div>
+
+          <div className='relative flex flex-col gap-4'>
+            <Image 
+            src={abtimg7}
+            alt='img'
+            className='object-contain rounded-2xl'
+            />
+            <div className='flex flex-col'>
+              <h4 className='text-2xl font-semibold text-neutral-800'>name</h4>
+              <p className='text-lg text-neutral-600'>occupation</p>
+            </div>
+          </div>
+
+          <div className='relative flex flex-col gap-4'>
+            <Image 
+            src={abtimg7}
+            alt='img'
+            className='object-contain rounded-2xl'
+            />
+            <div className='flex flex-col'>
+              <h4 className='text-2xl font-semibold text-neutral-800'>name</h4>
+              <p className='text-lg text-neutral-600'>occupation</p>
+            </div>
+          </div>
+          <div className='relative flex flex-col gap-4'>
+            <Image 
+            src={abtimg7}
+            alt='img'
+            className='object-contain rounded-2xl'
+            />
+            <div className='flex flex-col'>
+              <h4 className='text-2xl font-semibold text-neutral-800'>name</h4>
+              <p className='text-lg text-neutral-600'>occupation</p>
+            </div>
+          </div>
+          <div className='relative flex flex-col gap-4'>
+            <Image 
+            src={abtimg7}
+            alt='img'
+            className='object-contain rounded-2xl'
+            />
+            <div className='flex flex-col'>
+              <h4 className='text-2xl font-semibold text-neutral-800'>name</h4>
+              <p className='text-lg text-neutral-600'>occupation</p>
+            </div>
+          </div>
+          <div className='relative flex flex-col gap-4'>
+            <Image 
+            src={abtimg7}
+            alt='img'
+            className='object-contain rounded-2xl'
+            />
+            <div className='flex flex-col'>
+              <h4 className='text-2xl font-semibold text-neutral-800'>name</h4>
+              <p className='text-lg text-neutral-600'>occupation</p>
+            </div>
+          </div>
+          <div className='relative flex flex-col gap-4'>
+            <Image 
+            src={abtimg7}
+            alt='img'
+            className='object-contain rounded-2xl'
+            />
+            <div className='flex flex-col'>
+              <h4 className='text-2xl font-semibold text-neutral-800'>name</h4>
+              <p className='text-lg text-neutral-600'>occupation</p>
+            </div>
+          </div>
+          <div className='relative flex flex-col gap-4'>
+            <Image 
+            src={abtimg7}
+            alt='img'
+            className='object-contain rounded-2xl'
+            />
+            <div className='flex flex-col'>
+              <h4 className='text-2xl font-semibold text-neutral-800'>name</h4>
+              <p className='text-lg text-neutral-600'>occupation</p>
+            </div>
+          </div><div className='relative flex flex-col gap-4'>
+            <Image 
+            src={abtimg7}
+            alt='img'
+            className='object-contain rounded-2xl'
+            />
+            <div className='flex flex-col'>
+              <h4 className='text-2xl font-semibold text-neutral-800'>name</h4>
+              <p className='text-lg text-neutral-600'>occupation</p>
+            </div>
+          </div>
+          <div className='relative flex flex-col gap-4'>
+            <Image 
+            src={abtimg7}
+            alt='img'
+            className='object-contain rounded-2xl'
+            />
+            <div className='flex flex-col'>
+              <h4 className='text-2xl font-semibold text-neutral-800'>name</h4>
+              <p className='text-lg text-neutral-600'>occupation</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      {/* Tenth Section */}
       <section className='py-12'>
           <div className='max-w-4xl w-fit mx-auto py-10 space-y-3'>
                <h1 className='text-5xl font-semibold text-center'>Here&apos;s what our amazing clients are saying</h1>
