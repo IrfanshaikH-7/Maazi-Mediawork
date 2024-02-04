@@ -524,7 +524,7 @@ const HomePage = () => {
         
 
         {/* TENTH SECTION */}
-        <div className="py-12 md:px-28">
+        <div className="py-12 px-4 md:px-28">
           <QandA />
         </div>
 

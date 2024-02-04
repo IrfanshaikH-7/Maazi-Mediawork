@@ -110,13 +110,13 @@ const TestimonialPage = () => {
       </section>
 
       {/* SECOND */}
-      <section className='flex flex-col lg:flex-row justify-between gap-16 items-center py-24 '>
+      <section className='flex flex-col lg:flex-row justify-between gap-16 items-center py-24 px-2 md:px-0'>
             <h1 className='text-4xl text-center font-semibold md:text-3xl xl:text-4xl md:text-start text-neutral-600'>Stay up to date with our news, ideas and updates</h1>
             <div className='flex flex-col sm:flex-row gap-4 w-full max-w-2xl '>
                 <Input
                 placeholder='Enter your Email'
-                 className='py-8 px-12 border-2  text-xl' />
-                <Button className='p-8 bg-pink-600'>Subscribe</Button>
+                 className='py-6 md:py-8 px-12 border-2  text-xl' />
+                <Button className='p-6 md:p-8 bg-pink-600'>Subscribe</Button>
             </div>
          </section>
     </main>

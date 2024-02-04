@@ -34,15 +34,15 @@ import { Button } from '../ui/button'
 const components: { title: string; href: string; }[] = [
   {
     title: "Core Features",
-    href: "#core_feature",
+    href: "#core-feature",
   },
   {
     title: "Blog list",
-    href: "#blog_list",
+    href: "#blog-list",
   },
   {
     title: "Our projects",
-    href: "#our_project",
+    href: "#our-project",
   },
   {
     title: "Pricing",
@@ -50,7 +50,7 @@ const components: { title: string; href: string; }[] = [
   },
   {
     title: "Project details",
-    href: "#project_details",
+    href: "#project-details",
   },
   {
     title: "FAQs",
@@ -65,8 +65,8 @@ const components: { title: string; href: string; }[] = [
     href: "#Help-center",
   },
   {
-    title: "Log in",
-    href: "#log-in",
+    title: "Contact us",
+    href: "/contact",
   },
 ]
 const Nav = () => {
@@ -130,7 +130,7 @@ const Nav = () => {
           <NavigationMenuTrigger className='bg-transparent'>
           <Link href="/docs" legacyBehavior passHref>
     <NavigationMenuLink className={'bg-transparent'}>
-      Pages
+      More
     </NavigationMenuLink>
   </Link>
           </NavigationMenuTrigger>
@@ -190,7 +190,7 @@ const Nav = () => {
               <div className='overflow-x-hidden overflow-y-auto px-2'>
               <Accordion type="single" collapsible>
                 <AccordionItem value="item-1" className='border-none'>
-                  <AccordionTrigger className='test-base font-semibold px-2 hover:bg-slate-100 rounded-md'>About</AccordionTrigger>
+                  <AccordionTrigger className='test-base font-semibold px-2 hover:bg-slate-100 rounded-md'>Home</AccordionTrigger>
                   <AccordionContent className='flex flex-col gap-3'>
                   <SheetClose asChild >
                     <Link href={'#why_us'} className='text-base font-semibold hover:bg-slate-100 px-2 py-1.5 rounded-md'>
@@ -233,54 +233,78 @@ const Nav = () => {
                 <AccordionItem value="item-3" className='border-none'>
                   <AccordionTrigger className='test-base font-semibold px-2 hover:bg-slate-100 rounded-md'>Pages</AccordionTrigger>
                   <AccordionContent className='flex flex-col gap-3'>
-                    <Link href={'#feature'} className='text-base font-semibold hover:bg-slate-100 px-2 py-1.5 rounded-md'>
+                  <SheetClose asChild >
+                    <Link href={'/about'} className='text-base font-semibold hover:bg-slate-100 px-2 py-1.5 rounded-md'>
                       About us
                     </Link>
+                    </SheetClose>
+                    <SheetClose asChild >
                     <Link href={'#feature'} className='text-base font-semibold hover:bg-slate-100 px-2 py-1.5 rounded-md'>
                       Our Teams
                     </Link>
-                    <Link href={'#feature'} className='text-base font-semibold hover:bg-slate-100 px-2 py-1.5 rounded-md'>
+                    </SheetClose>
+                    <SheetClose asChild >
+                    <Link href={'/contact'} className='text-base font-semibold hover:bg-slate-100 px-2 py-1.5 rounded-md'>
                       Contact Us
                     </Link>
+                    </SheetClose>
+                    <SheetClose asChild >
                     <Link href={'#feature'} className='text-base font-semibold hover:bg-slate-100 px-2 py-1.5 rounded-md'>
                       Core Features
                     </Link>
+                    </SheetClose>
+                    <SheetClose asChild >
                     <Link href={'#feature'} className='text-base font-semibold hover:bg-slate-100 px-2 py-1.5 rounded-md'>
                       Our Projects
                     </Link>
-                    <Link href={'#feature'} className='text-base font-semibold hover:bg-slate-100 px-2 py-1.5 rounded-md'>
+                    </SheetClose>
+                    <SheetClose asChild >
+                    <Link href={'/project-details'} className='text-base font-semibold hover:bg-slate-100 px-2 py-1.5 rounded-md'>
                       Project Details
                     </Link>
-                    <Link href={'#feature'} className='text-base font-semibold hover:bg-slate-100 px-2 py-1.5 rounded-md'>
+                    </SheetClose>
+                    <SheetClose asChild >
+                    <Link href={'/testimonials'} className='text-base font-semibold hover:bg-slate-100 px-2 py-1.5 rounded-md'>
                       Testimonials
                     </Link>
+                    </SheetClose>
+                    <SheetClose asChild >
                     <Link href={'#feature'} className='text-base font-semibold hover:bg-slate-100 px-2 py-1.5 rounded-md'>
                       Our Projects
                     </Link>
+                    </SheetClose>
                     
                   </AccordionContent>
                 </AccordionItem>
 
                 <AccordionItem value="item-4" className='border-none'>
                   <AccordionTrigger  className='test-base font-semibold px-2 hover:bg-slate-100 rounded-md hide_Svg'>
-                    <Link href={'#feature'}>Pricing</Link>
+                  <SheetClose asChild >
+                    <Link href={'/pricing'}>Pricing</Link>
+                    </SheetClose>
                   </AccordionTrigger>
                 </AccordionItem>
 
                 <AccordionItem value="item-5" className='border-none'>
                   <AccordionTrigger  className='test-base font-semibold px-2 hover:bg-slate-100 rounded-md hide_Svg'>
-                    <Link href={'#feature'}>FAQs</Link>
+                    <SheetClose asChild >
+                    <Link href={'/faqs'}>FAQs</Link>
+                    </SheetClose>
                   </AccordionTrigger>
                 </AccordionItem>
 
                 <AccordionItem value="item-6" className='border-none'>
                   <AccordionTrigger  className='test-base font-semibold px-2 hover:bg-slate-100 rounded-md hide_Svg'>
+                  <SheetClose asChild >
                     <Link href={'#feature'}>Sign in</Link>
+                    </SheetClose>
                   </AccordionTrigger>
                 </AccordionItem>
                 <AccordionItem value="item-7" className='border-none'>
                   <AccordionTrigger  className='test-base font-semibold px-2 hover:bg-slate-100 rounded-md hide_Svg'>
+                    <SheetClose asChild >
                     <Link href={'#feature'}>Sign up</Link>
+                    </SheetClose>
                   </AccordionTrigger>
                 </AccordionItem>
               </Accordion>
