@@ -1,7 +1,7 @@
 import About from '@/components/Pages/About'
 import React from 'react'
 
-const page = () => {
+const Page = () => {
   return (
     <>
     <About />
@@ -9,4 +9,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

@@ -26,7 +26,7 @@ import { z } from "zod"
   
 import React from 'react'
 
-const page = () => {
+const Page = () => {
 
     const FormSchema = z.object({
         question_type: z.string(),
@@ -145,4 +145,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
