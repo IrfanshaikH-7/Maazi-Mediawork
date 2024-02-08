@@ -52,9 +52,9 @@ const HomePage = () => {
               volute ligula and aliquet tortor{" "}
             </p>
             <div className="w-full flex flex-col justify-center items-center sm:flex md:items-start md::justify-start  ">
-              <button className="py-2.5 px-8  bg-pink-600 w-fit rounded-md text-white text-xl font-semibold ">
+              <Link href={'#connect_b1'} className="py-2.5 px-8  bg-pink-600 w-fit rounded-md text-white text-xl font-semibold ">
                 Get started for free
-              </button>
+              </Link>
               <p className="mt-4 text-sm text-center lg:text-xl text-white font-medium">
                 no credit card needed, Free 14 days Trial
               </p>
@@ -76,6 +76,8 @@ const HomePage = () => {
       </main>
 
       {/* <----STARTING SECTION-----> */}
+
+      
       <div
         ref={featureRef}
         id="feature"
@@ -134,11 +136,11 @@ const HomePage = () => {
         </motion.div>
       </div>
 
-      <section className="h-full w-full">
+      <section className="h-full w-full px-4 sm:px-24 md:px-12 lg:px-20 xl:px-28">
         {/* <----FIRST SECTION-----> */}
-        <div id="why__maazi" className="h-full w-full flex flex-col md:flex-row mx-auto py-12 px-4 sm:px-24 md:px-12 lg:px-20 xl:px-28">
+        <div id="why__maazi" className="h-full w-full flex flex-col md:flex-row mx-auto py-12 ">
  
-            <motion.div className="relative h-auto min-w-full p-8 sm:p-24 md:py-4 md:px-0 md:min-w-[450px] lg:min-w-[580px] max-w-[43%] w-full bg-contain "
+            <motion.div className="relative h-auto min-w-full p-8  md:py-4 md:px-0 md:min-w-[450px] lg:min-w-[580px] max-w-[43%] w-full bg-contain "
           variants={fadeIn("right", 0.7)}
           initial="inactive"
           whileInView={"active"}
@@ -183,7 +185,17 @@ const HomePage = () => {
         </div>
 
         {/* <----SECOND SECTION-----> */}
-        <div className="h-full w-full flex flex-col md:flex-row mx-auto py-12 px-4 sm:px-24 md:px-12 lg:px-20 xl:px-28">
+        <div className="h-full w-full flex flex-col md:flex-row mx-auto py-12 ">
+        <motion.div className="md:hidden block relative h-auto min-w-full p-8 md:py-4 md:px-0 md:min-w-[450px] lg:min-w-[580px] max-w-[43%] w-full bg-contain "
+          variants={fadeIn("right", 0.7)}
+          initial="inactive"
+          whileInView={"active"}
+          viewport={{ once: true }}>
+            <Image
+            src={img2}
+            alt="hero"
+            />
+          </motion.div>
           <motion.div
             variants={fadeIn("left", 0.7)}
             initial="inactive"
@@ -219,7 +231,7 @@ const HomePage = () => {
             </ul>
           </motion.div>
          
-            <motion.div className="relative h-auto min-w-full p-8 sm:p-24 md:py-4 md:px-0 md:min-w-[450px] lg:min-w-[580px] max-w-[43%] w-full bg-contain "
+            <motion.div className=" hidden md:block relative h-auto min-w-full p-8 md:py-4 md:px-0 md:min-w-[450px] lg:min-w-[580px] max-w-[43%] w-full bg-contain "
           variants={fadeIn("right", 0.7)}
           initial="inactive"
           whileInView={"active"}
@@ -233,7 +245,7 @@ const HomePage = () => {
 
         {/* <----THIRD SECTION-----> */}
         <div
-        className="h-full w-full mx-auto py-12 px-4 sm:px-24 md:px-12 lg:px-20 xl:px-28">
+        className="h-full w-full mx-auto py-12 ">
           <div className="max-w-4xl text-center mx-auto space-y-6">
             <h1 className="text-4xl md:text-6xl text-neutral-800 font-bold ">
               Reach your audience through social media marketing
@@ -341,7 +353,7 @@ const HomePage = () => {
         </div>
 
         {/* <----FIFTH SECTION-----> */}
-        <div className="h-full w-full flex flex-col justify-between md:flex-row mx-auto py-12 gap-4 px-4 sm:px-24  md:px-4 lg:px-20 xl:px-28">
+        <div className="h-full w-full flex flex-col justify-between md:flex-row mx-auto py-12 gap-4 ">
           <motion.div
             variants={fadeIn("left", 0.7)}
             initial="inactive"
@@ -419,7 +431,7 @@ const HomePage = () => {
         </div>
 
         {/* <----SIXTH SECTION-----> */}
-        <div className="h-full w-full flex flex-col md:flex-row mx-auto py-12 px-4 sm:px-24 md:px-12 lg:px-20 xl:px-28">
+        <div className="h-full w-full flex flex-col md:flex-row mx-auto py-12 ">
         <motion.div className="relative h-auto min-w-full p-8 sm:p-24 md:py-4 md:px-0 md:min-w-[450px] lg:min-w-[580px] max-w-[43%] w-full bg-contain "
           variants={fadeIn("right", 0.7)}
           initial="inactive"
@@ -458,7 +470,7 @@ const HomePage = () => {
         </div>
 
         {/* <----SEVENTH SECTION-----> */}
-        <div id="how_it_works" className="h-full w-full mx-auto py-24 px-4 sm:px-20 md:px-12 lg:px-20 xl:px-28 bg-neutral-200">
+        <div id="how_it_works" className="h-full w-full mx-auto py-24  bg-neutral-200">
           <div className=" max-w-3xl lg:max-w-5xl text-center mx-auto space-y-6">
             <h1 className=" text-4xl md:text-6xl text-neutral-800 font-bold ">
             Track the progress towards objectives with key results
@@ -481,16 +493,16 @@ const HomePage = () => {
             </div>
 
         {/* <----EIGHT SECTION-----> */}
-        <div className="h-full w-full pt-36 px-4 sm:px-24 md:px-12 lg:px-20 xl:px-28">
+        <div className="h-full w-full pt-36 ">
         <AutoCaros />
         </div>
         
 
         {/*1<----NINTH SECTION-----> */}
-        <div id="best_solutions"  className="h-full w-full  flex flex-col justify-center py-12 px-4 sm:px-24 md:px-12 lg:px-20 xl:px-28">
+        <div id="best_solutions"  className="h-full w-full  flex flex-col justify-center py-12 ">
             <h2 className="text-4xl md:text-3xl lg:text-5xl text-center font-bold">The Complete Solutions</h2>
-            <h5 className="text-sm md:text-lg mx-auto ">Ligula risus auctor tempus magna feugiat lacinia</h5>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-4 lg:gap-12 xl:gap-16 px-4 py-14 md:p-8">
+            <h5 className="text-sm md:text-lg mx-auto mt-2">Ligula risus auctor tempus magna feugiat lacinia</h5>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-4 lg:gap-12 xl:gap-16 px-4 py-14 md:p-8 mt-4">
             <div className="relative h-full w-full flex flex-col items-center gap-4 aspect-square  p-8 sm:p-12 md:p-2 lg:p-8 rounded-xl bg-black/10">
                     <Image 
                     src={img8}
@@ -523,28 +535,29 @@ const HomePage = () => {
 
         
 
-        {/* TENTH SECTION */}
-        <div className="py-12 px-4 md:px-28">
-          <QandA />
-        </div>
-
-        {/* ELEVENTH SECTION */}
-        <section className="py-12 md:px-28">
-         <div className="flex flex-col items-center justify-center px-12 py-32 gap-3 px- bg-teal-50 rounded-lg shadow-md">
-          <h2 className="text-4xl md:text-3xl lg:text-5xl text-center font-bold text-neutral-500 xl:px-28">Starting with Maazi media is easy, fast and free</h2>
-          <h5 className="text-sm md:text-lg ">It only takes a few clicks to get started</h5>
-          <button className="px-6 py-3 text-white bg-pink-600 rounded-sm">Get started - it&apos;s free</button>
-          <p>Free for 14 days, no credit card required</p>
-        </div>
-        </section>
         
 
          
 
-        {/*1<----TWELVE SECTION-----> */}
-        <div className="h-full w-full py-36 px-4  md:px-12 lg:px-20 xl:px-28">
+        {/*1<----TENTH SECTION-----> */}
+        <div className="h-full w-full py-36">
         <TestCaro />
         </div>     
+
+        {/* ELEVENTH SECTION */}
+        <div className="py-12 ">
+          <QandA />
+        </div>
+
+        {/* TWELVE SECTION */}
+        <section id="connect_b1" className="py-12 md:px-28">
+         <div className="flex flex-col items-center justify-center px-12 py-32 gap-3  bg-teal-50 rounded-lg shadow-md">
+          <h2 className="text-4xl md:text-3xl lg:text-5xl text-center font-bold text-neutral-500 xl:px-28">Starting with Maazi media is easy, fast and free</h2>
+          <h5 className="text-sm md:text-lg ">It only takes a few clicks to get started</h5>
+          <Link href={'/contact'} className="px-6 py-3 text-white bg-pink-600 rounded-sm">Get started - it&apos;s free</Link>
+          <p>Free for 14 days, no credit card required</p>
+        </div>
+        </section>
       </section>
       {/* <Footer /> */}
     </>

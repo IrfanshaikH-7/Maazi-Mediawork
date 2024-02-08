@@ -34,7 +34,7 @@ import { Button } from '../ui/button'
 const components: { title: string; href: string; }[] = [
   {
     title: "Core Features",
-    href: "#core-feature",
+    href: "/core-features",
   },
   {
     title: "Blog list",
@@ -75,7 +75,7 @@ const Nav = () => {
     <nav className='h-16 w-full shadow-sm flex items-center sticky top-0 right-0 left-0 bg-slate-50 z-50 '>
         <div className='flex justify-between items-center  w-full max-w-7xl mx-auto px-4 md:px-6'>
               <div>
-                <p className='text-xl font-semibold uppercase text-neutral-700'>Maazi mediaworks</p>
+                <Link href={'/'} className='text-xl font-semibold uppercase text-neutral-700 cursor-pointer'>Maazi mediaworks</Link>
               </div>
               <div className='flex gap-4 '>
               <NavigationMenu className='hidden md:block'>
@@ -249,7 +249,7 @@ const Nav = () => {
                     </Link>
                     </SheetClose>
                     <SheetClose asChild >
-                    <Link href={'#feature'} className='text-base font-semibold hover:bg-slate-100 px-2 py-1.5 rounded-md'>
+                    <Link href={'/core-features'} className='text-base font-semibold hover:bg-slate-100 px-2 py-1.5 rounded-md'>
                       Core Features
                     </Link>
                     </SheetClose>
